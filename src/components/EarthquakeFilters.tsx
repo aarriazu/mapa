@@ -34,7 +34,7 @@ export const EarthquakeFilters = ({
       alignItems: 'center'
     }}>
       <label>
-        🔽 Mín. magnitud:
+        Magnitud mínima:
         <input
           type="number"
           value={minMag}
@@ -45,28 +45,29 @@ export const EarthquakeFilters = ({
         />
       </label>
       <label>
-        🔼 Máx. magnitud:
+        Magnitud máxima:
         <input
           type="number"
           value={maxMag}
           onChange={(e) => onMaxMagChange(parseFloat(e.target.value))}
           step={0.1}
           min={0}
+          max={10}
           style={{ marginLeft: '5px', width: '60px' }}
         />
       </label>
       <label>
-        🔍 Lugar:
+        Lugar:
         <input
           type="text"
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          placeholder="Ej: Chile"
+          placeholder=""
           style={{ marginLeft: '5px', width: '120px' }}
         />
       </label>
       <label>
-        📅 Desde:
+        Fecha:
         <input
           type="date"
           value={minDate}

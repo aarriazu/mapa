@@ -29,12 +29,10 @@ export const EarthquakeMarker = ({ quake }: Props) => {
         Fecha y hora: {date}<br />
         {weather ? (
           <>
-            🌡️ Temperatura: {weather.temperature}°C<br />
-            💨 Viento: {weather.windspeed} km/h
+            Temperatura: {weather.temperature}°C<br />
+            Viento: {weather.windspeed} km/h
           </>
-        ) : (
-          "Cargando temporal..."
-        )}
+        ) : ("")}
       </Popup>
     </Marker>
   );

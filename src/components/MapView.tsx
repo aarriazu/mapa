@@ -32,7 +32,6 @@ export const MapView = () => {
     const place = quake.properties.place;
     const time = new Date(quake.properties.time);
   
-    // Extraer país del final del string
     const country = place.includes(',')
       ? place.split(',').pop()?.trim().toLowerCase()
       : '';
