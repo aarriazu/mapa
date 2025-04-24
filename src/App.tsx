@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header>
         <p>
-          Mapa
+          Últimos 200 terremotos registrados y sus condiciones meteorologicas
         </p>
       </header>
       <div className="map">
