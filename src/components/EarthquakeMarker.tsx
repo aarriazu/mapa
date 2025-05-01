@@ -1,4 +1,3 @@
-// EarthquakeMarker.tsx
 import { Marker, Popup } from 'react-leaflet';
 import { useState } from 'react';
 import { fetchWeather } from '../services/weatherService';
